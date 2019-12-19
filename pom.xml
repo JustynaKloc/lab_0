@@ -17,7 +17,13 @@
   		<groupId>org.hamcrest</groupId>
   		<artifactId>hamcrest-all</artifactId>
   		<version>1.3</version>
-  	</dependency>
+  	</dependency> 
   </dependencies>
-  
+  <build>
+   <plugin>
+			  <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.6.0.1398</version>
+		</plugin>
+  </build>
 </project>
