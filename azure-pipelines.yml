@@ -10,6 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'tiucz1'
+    organization: 'tiucz1'
+    scannerMode: 'Other'
+
+- task: SonarCloudAnalyze@1
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
